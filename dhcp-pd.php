@@ -40,7 +40,4 @@ foreach($subnets as $interface => $prefix) {
 }
 
 write_config(desc: 'Adjust DHCPv6-PD', backup: false);
-! killall kea-dhcp6
-services_kea6_configure();
-
 ?>
