@@ -9,6 +9,6 @@ If you have multiple WAN prefixes routed to you with different prefix lengths, s
 
 To run this script, copy the contents between "\<?php" and "?\>" and execute it using the pfSense PHP shell: https://docs.netgate.com/pfsense/en/latest/development/php-shell.html
 
-I am running this script using /etc/devd.conf, which I found here: https://forum.netgate.com/topic/59678/run-shell-script-on-interface-status-change. There is probably some kind of official hook for running scripts on Interface state change in pfSense, but I couldn't be bothered to search further.
+I'm running the script by inserting it into interfaces.inc and rc.newwanipv6 in pfSense. My adjustments to those files are also included in the repo, however I probably missed some bits, but for now, it works.
 
 This is a pretty hacky solution, but it works for me for now, and hopefully there will be a proper solution for this someday.
